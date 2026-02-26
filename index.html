@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connor Ferrick — Personal Website</title>
+    <meta
+      name="description"
+      content="Connor Ferrick's personal website and resume-style portfolio with experience, projects, writing, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">CF</span>
+          <div>
+            <p class="brand-name">Connor Ferrick</p>
+            <p class="brand-title">Product-minded Software Engineer</p>
+          </div>
+        </div>
+
+        <nav aria-label="Main navigation" class="main-nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#writing">Writing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="toggle-icon" aria-hidden="true">◐</span>
+          <span class="toggle-label">Dark</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container section">
+        <p class="eyebrow">Available for full-time and selective freelance work</p>
+        <h1>Building calm, reliable software that people actually want to use.</h1>
+        <p class="hero-copy">
+          I'm Connor Ferrick — a full-stack engineer who enjoys owning the full journey from rough idea to shipped
+          product. I focus on thoughtful UX, maintainable architecture, and real business outcomes.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Let's talk</a>
+          <a class="btn ghost" href="#experience">View resume</a>
+        </div>
+      </section>
+
+      <section id="about" class="container section panel">
+        <div class="section-heading">
+          <h2>About</h2>
+          <p>Engineer, teammate, and curious builder.</p>
+        </div>
+        <div class="about-grid">
+          <p>
+            Over the last 8+ years, I've worked across startups and established teams shipping products in fintech,
+            health, logistics, and internal tooling. My sweet spot is in that in-between zone where code quality,
+            design polish, and practical delivery speed all matter at the same time.
+          </p>
+          <p>
+            I care deeply about writing clear code and clear communication. I mentor junior developers, document
+            decisions, and work closely with design and product so teams can move fast without breaking trust.
+          </p>
+          <ul class="facts">
+            <li><strong>Location:</strong> Chicago, IL (open to remote)</li>
+            <li><strong>Focus:</strong> TypeScript, React, Node.js, PostgreSQL</li>
+            <li><strong>Currently exploring:</strong> AI-assisted developer tooling, systems design</li>
+            <li><strong>Outside of work:</strong> Long-distance running, coffee roasting, and live music</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="container section">
+        <div class="section-heading">
+          <h2>Experience</h2>
+          <p>A quick resume in timeline form.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="card">
+            <div class="card-header">
+              <h3>Senior Software Engineer · Lantern Labs</h3>
+              <p>2022 — Present</p>
+            </div>
+            <ul>
+              <li>Led migration from a monolithic Rails app to a service-oriented TypeScript platform.</li>
+              <li>Built a workflow orchestration system that reduced onboarding time by 41%.</li>
+              <li>Partnered with product/design to launch a customer dashboard used by 18k+ monthly users.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <h3>Software Engineer · Northline Health</h3>
+              <p>2019 — 2022</p>
+            </div>
+            <ul>
+              <li>Designed and implemented scheduling APIs supporting over 1.2M annual appointments.</li>
+              <li>Improved p95 response times by 34% through caching and query optimization initiatives.</li>
+              <li>Introduced observability standards (metrics, traces, alerts) adopted by four product teams.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <h3>Frontend Engineer · Foundry Logistics</h3>
+              <p>2016 — 2019</p>
+            </div>
+            <ul>
+              <li>Built internal planning tools with React that replaced spreadsheet-heavy manual workflows.</li>
+              <li>Created a design system that cut front-end feature delivery time by ~25%.</li>
+              <li>Collaborated directly with operations to identify and automate high-friction dispatch tasks.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="container section panel">
+        <div class="section-heading">
+          <h2>Selected projects</h2>
+          <p>Products and experiments I’m proud of.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Pulseboard</h3>
+            <p>
+              A lightweight analytics dashboard for small SaaS teams. Built with Next.js, PostgreSQL, and ClickHouse
+              to offer practical, privacy-aware product insights.
+            </p>
+            <p class="meta">Role: Product + Engineering · 2024</p>
+          </article>
+          <article class="project-card">
+            <h3>Draftline</h3>
+            <p>
+              An AI-assisted PR reviewer that summarizes risk, highlights architectural concerns, and suggests test
+              cases. Used internally by two engineering orgs.
+            </p>
+            <p class="meta">Role: Lead Engineer · 2023</p>
+          </article>
+          <article class="project-card">
+            <h3>Routewise</h3>
+            <p>
+              A route optimization and dispatch planning tool for regional couriers. Reduced manual scheduling effort
+              by roughly 12 hours/week per operations manager.
+            </p>
+            <p class="meta">Role: Full-stack Engineer · 2021</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="writing" class="container section">
+        <div class="section-heading">
+          <h2>Writing & speaking</h2>
+          <p>Sharing what I learn while building.</p>
+        </div>
+        <ul class="writing-list">
+          <li>
+            <a href="#" aria-label="Read article: Shipping faster by reducing decision latency">
+              Shipping faster by reducing decision latency
+            </a>
+            <span>Essay · 2025</span>
+          </li>
+          <li>
+            <a href="#" aria-label="Read article: A practical guide to observability for product teams">
+              A practical guide to observability for product teams
+            </a>
+            <span>Guide · 2024</span>
+          </li>
+          <li>
+            <a href="#" aria-label="Read talk notes: Front-end architecture that scales with teams">
+              Front-end architecture that scales with teams
+            </a>
+            <span>Conference talk · 2023</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="container section panel contact">
+        <div>
+          <h2>Let’s build something meaningful.</h2>
+          <p>
+            If you're hiring, starting something new, or just want to swap notes on product engineering, I’d love to
+            hear from you.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:connor.ferrick@email.com">connor.ferrick@email.com</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Connor Ferrick · Designed and built with care.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
